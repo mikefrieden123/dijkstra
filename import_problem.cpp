@@ -9,13 +9,17 @@
 #include "MyGraph.h"
 
 // Put name function here
-
-
+void get_identity(string &my_id)
+{
+  my_id = "mkf9mr";
+}
 
 string import_problem()
 {
     string prob_line;
-    // do input processing here
+    MyGraph *a;
+    a->fillMatrix();
 
+    prob_line = a->findQuestion();
     return prob_line;
 }

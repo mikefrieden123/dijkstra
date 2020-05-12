@@ -13,16 +13,11 @@
 
 MyGraph * import_graph()
 {
-    // where graph_size is n;
-    int n;
-    MyGraph *g_temp = new MyGraph(n);
 
-    // or 
-    // MyGraph *g_temp = new MyGraph;
+    MyGraph *g_temp = new MyGraph;
 
-    // Here: Do import on your g object, using public MyGraph functions.
-    // You will need to store the graph data and in the MyGraph.
-
+    g_temp->fillMatrix();
+  
     return g_temp;
 }
 
